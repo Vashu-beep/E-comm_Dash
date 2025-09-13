@@ -20,7 +20,7 @@ const SignUp =()=>{
     
     const collectData=async ()=>{
         console.warn(name,email,password);
-        let result = await fetch('http://localhost:5000/register',{
+        let result = await fetch('https://e-comm-dash-2-0roj.onrender.com/register',{
             method: 'post',
             body: JSON.stringify({name, email, password}),
             headers:{
